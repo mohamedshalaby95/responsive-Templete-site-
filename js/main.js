@@ -1,5 +1,5 @@
 
-// display in scroll up and none in scoll down  start 
+// display navbar in scroll up and none in scoll down  start 
     let nav=document.querySelector(".navbar");
     var lastScrollTop = 0;
 
@@ -18,9 +18,9 @@
 
 /* make the resposive button start*/
 
- let button_toggle=document.querySelector(".toggle");
+let button_toggle=document.querySelector(".toggle");
 let linksUl =document.querySelector(".nav_links")
-console.log(linksUl)
+
 
 button_toggle.onclick=function(){
    

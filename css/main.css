@@ -139,7 +139,7 @@ margin-right: 55px;
 .links_container{
     text-align: right;
 }
-@media(max-width:991px){
+@media screen and (max-width:991px){
     .navbar .toggle{
        display: block;
       
@@ -371,7 +371,7 @@ top:-20px;
 
 
 }
- @media  (max-width:1200px){ 
+ @media  screen and (max-width:1200px){ 
   
     .border{
     
@@ -491,13 +491,21 @@ top:-20px;
    }
    .about .about_inf{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
    }
    .about .about_caption_detailes ul li{
      
      padding-top: 10px;
       
-   
+    
+   }
+   .about .about_inf #location{
+      margin-right: 65px;
+       
+       
+   }
+   .about .about_inf #email{
+       margin-right: 15px;
    }
    .about .about_caption_detailes ul span{
        color: var(--main--color);
@@ -518,7 +526,7 @@ top:-20px;
     margin-left: 20px;
 }
 
-@media  (max-width:768px){  
+@media   screen and (max-width:768px){  
     
     .about  .container{
         flex-direction: column;
@@ -650,7 +658,7 @@ top:-20px;
    color: gray;
 }
 
-@media (max-width:576px){
+@media screen and (max-width:576px){
     .service_captions {
         display: flex;
         flex-direction: column;
@@ -663,7 +671,7 @@ top:-20px;
     }
    
 }
-@media (max-width:769px) and (min-width:577px){
+@media screen and (max-width:769px) and (min-width:577px){
     .service_captions {
         display: flex;
        
@@ -795,7 +803,7 @@ top:-20px;
 }
 
 
-@media (max-width:576px){
+@media screen and (max-width:576px){
     .Portfolio .port_heading h1{
        margin-left: 15%;
     }
@@ -817,7 +825,7 @@ top:-20px;
   
 }
 
-@media (max-width:769px) and (min-width:577px){
+@media screen and (max-width:769px) and (min-width:577px){
     .Portfolio .port_heading h1{
         margin-left: 15%;
      }
@@ -839,7 +847,7 @@ top:-20px;
         height: 60%;
     }
 }
-@media (max-width:992px) and (min-width:770px){
+@media screen and (max-width:992px) and (min-width:770px){
     .Portfolio .port_links{
         width: 58%;
     }
@@ -994,10 +1002,20 @@ top:-20px;
     padding: 4px 12px;
 }
 
-@media (max-width:576px){
-    .Feedback .Feedback-frist h1{
-        margin-left: 30%;
+@media screen and (max-width:576px){
+     .Feedback .hr{
+        display: none;
+         
+     }
+     .Feedback .Feedback-frist h1::before{
+        display: none;
     }
+    .Feedback .Feedback-frist h1::after{
+       display: none;
+        
+        
+    }
+   
     .Feedback-caption{
       
         display: flex;
@@ -1016,21 +1034,28 @@ top:-20px;
     }
     
     .feedback .caption_image{
-        width: 50%;
+        width: 100%;
         margin: auto;
     }
     .feedback .caption{
         width: 100%;
         margin-top:10px;
         position: relative;
-    
+        background-color: red ;
         
         
         
     }
+    .feedback .caption p{
+        width: 100%;
+    }
+    .Feedback-caption .caption {
+        width:120% !important;
+    }
+
 }
 
-@media (max-width:769px) and (min-width:577px){
+@media screen and (max-width:769px) and (min-width:577px){
     .Feedback-caption{
       
         display: flex;
@@ -1064,7 +1089,7 @@ top:-20px;
 
  
 }
-@media (max-width:992px) and (min-width:770px){
+@media screen and (max-width:992px) and (min-width:770px){
     .Feedback-caption{
       
         display: flex;
@@ -1212,7 +1237,7 @@ top:-20px;
     font-size: 100%;
     font-weight: 900;
 }
-@media(max-width:768px){
+@media screen and (max-width:768px){
     .our_blog h1{
       margin-left: 50px;
     }
@@ -1315,7 +1340,7 @@ top:-20px;
     background-color: blue;
     border: blue;
 }
-@media(max-width:768px){
+@media screen and (max-width:768px){
     .contact h1{
         margin-left: 50px;
     }
@@ -1371,7 +1396,7 @@ top:-20px;
 
 
 
-@media  (min-width:576px){ /* small device*/
+@media  screen and (min-width:576px){ /* small device*/
     .container{
         max-width: 540px;
       
@@ -1382,7 +1407,7 @@ top:-20px;
 
 }
 
-@media  (min-width:768px){ /* medium device*/
+@media screen and  (min-width:768px){ /* medium device*/
     .container{
         max-width: 730px;
        
@@ -1395,7 +1420,7 @@ top:-20px;
 
 }
 
-@media  (min-width:992px){ /* pc device*/
+@media  screen and (min-width:992px){ /* pc device*/
     .container{
         max-width: 960px;
         
@@ -1407,7 +1432,7 @@ top:-20px;
 
 }
 
-@media  (min-width:1200px){ /* largedevice*/
+@media screen and  (min-width:1200px){ /* largedevice*/
     .container{
      
         max-width: 1140px;
